@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+    #home,
+    #about,
+    #portfolio,
+    #contact {
+        padding-top: 95px;
+        height: 500px;
+    }
+    #services {
+        height: 1500px;
+    }
+    section {
+        display: block;
+    }
+}
