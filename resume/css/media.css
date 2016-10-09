@@ -1,15 +1,35 @@
 @media screen and (max-width: 480px) {
-    #home,
-    #about,
-    #portfolio,
-    #contact {
-        padding-top: 95px;
-        height: 500px;
+    .logo .logo-surname {
+        font-size: 4em;
     }
-    #services {
-        height: 1500px;
+    .item {
+        margin-left: 0;
+        margin-right: 0;
     }
-    section {
-        display: block;
+    .item h1 {
+        font-size: 2.4em;
+    }
+    .contact + .item-table {
+        font-size: 1.3em;
+    }
+    .contact + .item-table .item-row .item-cell:nth-child(1) {
+        padding-right: 20px;
+    }
+    .item .skills + div {
+        padding: 0;
+    }
+    section:nth-child(2) {
+        margin-top: -50px;
+    }
+    section:nth-child(2) .item {
+        margin-left: 0;
+    }
+    .software-container .col-md-6 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .software-container .col-md-6:nth-child(2n) {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
