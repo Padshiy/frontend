@@ -1,0 +1,217 @@
+@color-green: #04e4a2;
+@color-light-greem: #68EEAC;
+@color-red: #e94643;
+@color-pink: #ef5350;
+@background-color: #ffffff;
+
+.font() {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24.95px;
+    color: #626262;
+}
+
+.page {
+    background-color: @background-color;
+    .font();
+}
+
+/* block header */
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: @color-red;
+    border-top: 27px solid @color-green;
+    color: #ffffff;
+    &__block {
+        padding-left: 277px;
+        padding-right: 113px;
+    }
+    &__logo {
+        float: left;
+    }
+    &__nav {
+        float: right;
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+.logo {
+    &__link {
+        color: #fff;
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 2.1;
+    }
+}
+
+.nav {
+    &__page {
+        text-transform: uppercase;
+        border-bottom: 2px solid #fdd835;
+        line-height: 4.2;
+        font-size: 21px;
+    }
+}
+
+/* block main */
+.main {
+    width: 100%;
+    height: 713px;
+    background-color: @color-pink;
+    position: relative;
+    z-index: 10;
+    &__img {
+        position: absolute;
+        top: 80px;
+        left: 233px;
+    }
+    &__article {
+        float: right;
+        margin-right: 192px;
+        margin-top: 208px;
+        position: relative;
+    }
+}
+
+.img {
+    width: 472px;
+    height: 991px;
+    border-top: 141px solid #322323;
+    border-bottom: 140px solid #322323;
+    border-left: 34px solid #322323;
+    border-right: 37px solid #322323;
+    border-radius: 68px;
+    -moz-border-radius: 68px;
+    -webkit-border-radius: 68px;
+    background-color: transparent;
+    &__photography {
+        width: 100%;
+    }
+    &__speaker1 {
+        top: -100px;
+        position: absolute;
+        left: 48%;
+    }
+    &__speaker2 {
+        top: -57px;
+        position: absolute;
+        left: 41%;
+    }
+    &__touch {
+        margin: 23px auto 0;
+    }
+    &__block1 {
+        transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -webkit-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -moz-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -o-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -ms-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        position: absolute;
+        top: 162px;
+        z-index: -1;
+        left: -452px;
+    }
+    &__block2 {
+        transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -webkit-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -moz-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -o-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        -ms-transform: rotate(37.7deg) scale(1) skew(23deg) translate(0);
+        position: absolute;
+        top: 289px;
+        z-index: -1;
+        left: -440px;
+    }
+}
+
+.speaker1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: @color-pink;
+}
+
+.speaker2 {
+    width: 74px;
+    height: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: @color-pink;
+}
+
+.touch {
+    width: 84px;
+    height: 84px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: transparent;
+}
+
+.block1 {
+    width: 1090px;
+    height: 98px;
+    display: block;
+    background-color: @color-green;
+}
+
+.block2 {
+    width: 1090px;
+    height: 98px;
+    display: block;
+    background-color: @color-light-greem;
+}
+
+.article {
+    width: 607px;
+    height: 350px;
+    &__button {
+        bottom: 0px;
+        right: 0;
+        position: absolute;
+    }
+}
+
+.text1 {
+    &__header {
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: 0.67px;
+        color: #fff;
+    }
+}
+
+.text2 {
+    &__main {
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: 0.67px;
+        color: #f9fbe8;
+        display: inline-block;
+        text-align: justify;
+    }
+}
+
+.button {
+    color: #ffffff;
+    width: 202px;
+    height: 67px;
+    background-color: @color-light-greem;
+    text-align: center;
+    margin: auto 0;
+    line-height: 60px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 22px;
+}
