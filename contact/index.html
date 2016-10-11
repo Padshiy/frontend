@@ -70,18 +70,28 @@
 
         <!--   block footer     -->
         <footer class="footer">
-           
+
             <form class="footer__form form">
-                <input type="text">
-                <input type="text">
-                <input type="email">
-                <select name="" id="">
-                    <option value="App Design">App Design</option>
-                </select>
+                <h2 class="form__header">Lets Talk</h2>
+                <input class="form__input first" type="text" name="first name" placeholder="First Name">
+                <input class="form__input last" type="text" name="last name" placeholder="Last  Name">
+                <input class="form__input email" type="email" name="email" placeholder="Email Address">
+                <div class="form__select">
+                    <div class="select-arrow-1"></div>
+                    <div class="select-arrow-2"></div>
+                    <select class="select selectpicker" name="" id="">
+                        <option value="App Design">App Design</option>
+                    </select>
+                </div>
+                <textarea class="form__textarea col-md-12" placeholder="Type your query here" cols="30" rows="3">
+
+                </textarea>
+                <input class="form__submit" type="submit" value="Send">
             </form>
-            
-            <div>
-                
+
+            <div class="footer__copyright">
+                <span class="glyphicon glyphicon-copyright-mark">2015 indipixel design</span>
+                <span class="glyphicon glyphicon-envelope">contact@yourmail.com</span>
             </div>
         </footer>
     </div>
